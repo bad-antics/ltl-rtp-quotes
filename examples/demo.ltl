@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_rtp_quotes
+
+import std::io
+use ltl_rtp_quotes as lib
+
+fn main() {
+    io::println("ltl_rtp_quotes demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
